@@ -1,0 +1,15 @@
+
+
+#commision_rate calculator.
+
+advanced = 2000
+
+def mainfunction():
+
+
+
+
+
+
+
+mainfunction()
