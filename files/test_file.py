@@ -15,7 +15,7 @@ def main():
 
     print("names inserted")
  
-  # Close the file.
+  # Close the file
     outfile.close()
  
  # Call the main function.
