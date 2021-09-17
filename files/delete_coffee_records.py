@@ -3,7 +3,7 @@
  
 import os # Needed for the remove and rename functions
 
-def main_deletecoffee():
+def coffee():
     # Create a bool variable to use as a flag.
     found = False
 
@@ -57,4 +57,4 @@ def main_deletecoffee():
        print('That item was not found in the file.')
 
  # Call the main function.
-main_deletecoffee()
+coffee()

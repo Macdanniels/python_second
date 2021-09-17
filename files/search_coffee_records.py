@@ -4,7 +4,7 @@
 # 2 # coffee.txt file for records matching a
 # description.
 
-def coffeesearch():
+def coffee():
 # Create a bool variable to use as a flag.
     found = False
 
@@ -51,4 +51,4 @@ def coffeesearch():
         print('That item was not found in the file.')
 
 # Call the main function.
-coffeesearch()
+coffee()

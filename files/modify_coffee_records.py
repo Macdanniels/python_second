@@ -1,36 +1,39 @@
 
-
 # This program allows the user to modify the quantity
  # in a record in the coffee.txt file.
 
 import os # Needed for the remove and rename functions
 
-def main_modifycoffee():
+def coffee():
     # Create a bool variable to use as a flag.
-
     found = False
 
 # Get the search value and the new quantity.
     search = input('Enter a description to search for: ')
-    new_qty = int(input('Enter the new quantity: '))
-
+    new_qty = (input('Enter the new quantity: '))
+    try:
 # Open the original coffee.txt file.
-    coffee_file = open('coffee.txt', 'r')     #to open the coffee records
-
+        coffee_file = open('coffee.txt', 'r')     #to open the coffee records
+    except IOError: 
+        print("IOError found")
+    else:
 # Open the temporary file.
-    temp_file = open('temp.txt', 'w')
+        temp_file = open('temp.txt', 'w')
+
+# Open the coffee.txt file.
+    coffee_file = open('coffee.txt', 'r')
 
 # Read the first record's description field.
-    descr = coffee_file.readline()              
+    descr = coffee_file.readline()
 
 # Read the rest of the file.
     while descr != '':
-    # Read the quantity field.     
-        qty = float(coffee_file.readline())       #converting the float/int to string for readabilty
+    # Read the quantity field.
+        qty = float(coffee_file.readline())
 
 # Strip the \n from the description.
         descr = descr.rstrip('\n')
-
+        
 # Write either this record to the temporary file,
 # or the new record if this is the one that is
 # to be modified.
@@ -48,7 +51,7 @@ def main_modifycoffee():
         temp_file.write(str(qty) + '\n')
 
 # Read the next description.
-    descr = coffee_file.readline()
+        descr = coffee_file.readline()
 
 # Close the coffee file and the temporary file.
     coffee_file.close()
@@ -68,4 +71,4 @@ def main_modifycoffee():
         print('That item was not found in the file.')
 
 # Call the main function.
-main_modifycoffee()
+coffee()

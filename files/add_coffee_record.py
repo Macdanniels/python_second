@@ -2,7 +2,7 @@
 # This program adds coffee inventory records to
 # the coffee.txt file.
 
-def maincoffee():
+def coffee():
     # Create a variable to control the loop.
     another = 'y'
 
@@ -19,7 +19,7 @@ def maincoffee():
 # Append the data to the file.
         coffee_file.write(descr + '\n')
         coffee_file.write(str(qty) + '\n')
-
+        
  # Determine whether the user wants to add
  # another record to the file.
         print('Do you want to add another record?')
@@ -30,4 +30,4 @@ def maincoffee():
     print('Data appended to coffee.txt.')
 
  # Call the main function.
-maincoffee()
+coffee()
