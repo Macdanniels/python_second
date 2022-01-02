@@ -25,11 +25,11 @@
 # print( mid_days )
 
 
-names = ['Jim', 'Jill', 'John', 'Jasmine']
-if 'Jasmine' not in names:
+names = ['Jim', 'Jill', 'John', 'Jasmine', 'saratu']
+if 'Jim' not in names:
     print('Cannot find Jasmine.')
 else:
-    print("Jasmine's family:")
+    print( names[0] + " family:")
 print(names)
 
 

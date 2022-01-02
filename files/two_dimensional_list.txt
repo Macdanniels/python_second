@@ -1,0 +1,20 @@
+
+# This program assigns random numbers to
+# a two-dimensional list.
+import random
+
+def original():
+
+    
+
+
+
+
+
+
+
+
+
+
+
+original()
